@@ -1,0 +1,95 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      padding: 40px 20px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .recipe-card {
+      width: 100%;
+      max-width: 600px;
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      padding: 25px;
+      transition: all 0.4s ease;
+    }
+
+    .recipe-card:hover {
+      transform: scale(1.01);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    h1, h3, p {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .btn {
+      flex: 1 1 100%;
+      padding: 12px;
+      background: #ff595e;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e63946;
+      transform: scale(1.05);
+    }
+
+    .timer, .step-display {
+      text-align: center;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #333;
+      margin-top: 15px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+      font-size: 0.95rem;
+    }
+
+    li {
+      line-height: 1.6;
+    }
+
+    @media (min-width: 600px) {
+      .btn {
+        flex: 1 1 30%;
+      }
+
+      .timer, .step-display {
+        font-size: 1.1rem;
+      }
+    }
