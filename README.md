@@ -1,1 +1,1 @@
-# Responsive-Recipe-card-TaskBy->VaultOfCodes
+# Responsive-Recipe-card TaskBy VaultOfCodes
